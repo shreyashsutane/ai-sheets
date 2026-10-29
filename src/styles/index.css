@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+/* =========================================================
+   THEME 1: Google Workspace Light (Default Light)
+   ========================================================= */
+:root,
+[data-theme='light'] {
+  --bg-app: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-surface-secondary: #f1f5f9;
+  --bg-surface-hover: #e2e8f0;
+  --bg-header: #ffffff;
+  
+  --border-subtle: #e2e8f0;
+  --border-strong: #cbd5e1;
+  --border-grid: #e2e8f0;
+  --header-grid-bg: #f8fafc;
+  --header-grid-text: #64748b;
+  --header-grid-active: #e2e8f0;
+  
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  
+  --accent-primary: #10b981;
+  --accent-primary-hover: #059669;
+  --accent-primary-subtle: #ecfdf5;
+  --accent-blue: #2563eb;
+  --accent-blue-subtle: #eff6ff;
+  
+  --selection-border: #2563eb;
+  --selection-bg: rgba(37, 99, 235, 0.08);
+  --fill-handle-color: #2563eb;
+  
+  --ai-gradient-start: #3b82f6;
+  --ai-gradient-mid: #8b5cf6;
+  --ai-gradient-end: #ec4899;
+  --ai-surface: #fbfbfe;
+  
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+/* =========================================================
+   THEME 2: Obsidian / Linear Dark (Default Dark)
+   ========================================================= */
+[data-theme='dark'] {
+  --bg-app: #090d16;
+  --bg-surface: #0f172a;
+  --bg-surface-secondary: #1e293b;
+  --bg-surface-hover: #334155;
+  --bg-header: #0f172a;
+  
+  --border-subtle: #1e293b;
+  --border-strong: #334155;
+  --border-grid: #1e293b;
+  --header-grid-bg: #111827;
+  --header-grid-text: #94a3b8;
+  --header-grid-active: #1e293b;
+  
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #64748b;
+  
+  --accent-primary: #10b981;
+  --accent-primary-hover: #34d399;
+  --accent-primary-subtle: rgba(16, 185, 129, 0.15);
+  --accent-blue: #3b82f6;
+  --accent-blue-subtle: rgba(59, 130, 246, 0.15);
+  
+  --selection-border: #60a5fa;
+  --selection-bg: rgba(96, 165, 250, 0.15);
+  --fill-handle-color: #60a5fa;
+  
+  --ai-surface: #131b2e;
+}
+
+/* =========================================================
+   THEME 3: Nordic Frost (Nord)
+   ========================================================= */
+[data-theme='nord'] {
+  --bg-app: #242933;
+  --bg-surface: #2e3440;
+  --bg-surface-secondary: #3b4252;
+  --bg-surface-hover: #434c5e;
+  --bg-header: #2e3440;
+  
+  --border-subtle: #3b4252;
+  --border-strong: #4c566a;
+  --border-grid: #3b4252;
+  --header-grid-bg: #282d37;
+  --header-grid-text: #88c0d0;
+  --header-grid-active: #3b4252;
+  
+  --text-primary: #eceff4;
+  --text-secondary: #d8dee9;
+  --text-muted: #94a3b8;
+  
+  --accent-primary: #88c0d0;
+  --accent-primary-hover: #8fbcbb;
+  --accent-primary-subtle: rgba(136, 192, 208, 0.15);
+  --accent-blue: #81a1c1;
+  --accent-blue-subtle: rgba(129, 161, 193, 0.15);
+  
+  --selection-border: #88c0d0;
+  --selection-bg: rgba(136, 192, 208, 0.15);
+  --fill-handle-color: #88c0d0;
+  
+  --ai-surface: #2e3440;
+}
+
+/* =========================================================
+   THEME 4: Warm Sepia / Solarized Paper
+   ========================================================= */
+[data-theme='sepia'] {
+  --bg-app: #f4eee1;
+  --bg-surface: #fdf6e2;
+  --bg-surface-secondary: #eee8d5;
+  --bg-surface-hover: #e0d7be;
+  --bg-header: #fdf6e2;
+  
+  --border-subtle: #e0d7be;
+  --border-strong: #cbbf9e;
+  --border-grid: #e5dcbe;
+  --header-grid-bg: #f4ece0;
+  --header-grid-text: #657b83;
+  --header-grid-active: #eee8d5;
+  
+  --text-primary: #433422;
+  --text-secondary: #586e75;
+  --text-muted: #93a1a1;
+  
+  --accent-primary: #b58900;
+  --accent-primary-hover: #9b7500;
+  --accent-primary-subtle: rgba(181, 137, 0, 0.12);
+  --accent-blue: #268bd2;
+  --accent-blue-subtle: rgba(38, 139, 210, 0.12);
+  
+  --selection-border: #cb4b16;
+  --selection-bg: rgba(203, 75, 22, 0.1);
+  --fill-handle-color: #cb4b16;
+  
+  --ai-surface: #fdf6e2;
+}
+
+/* =========================================================
+   THEME 5: Dracula Dark
+   ========================================================= */
+[data-theme='dracula'] {
+  --bg-app: #1e1f29;
+  --bg-surface: #282a36;
+  --bg-surface-secondary: #343746;
+  --bg-surface-hover: #44475a;
+  --bg-header: #282a36;
+  
+  --border-subtle: #44475a;
+  --border-strong: #6272a4;
+  --border-grid: #383a4c;
+  --header-grid-bg: #21222c;
+  --header-grid-text: #bd93f9;
+  --header-grid-active: #44475a;
+  
+  --text-primary: #f8f8f2;
+  --text-secondary: #bd93f9;
+  --text-muted: #6272a4;
+  
+  --accent-primary: #50fa7b;
+  --accent-primary-hover: #40e06b;
+  --accent-primary-subtle: rgba(80, 250, 123, 0.15);
+  --accent-blue: #8be9fd;
+  --accent-blue-subtle: rgba(139, 233, 253, 0.15);
+  
+  --selection-border: #ff79c6;
+  --selection-bg: rgba(255, 121, 198, 0.15);
+  --fill-handle-color: #ff79c6;
+  
+  --ai-surface: #282a36;
+}
+
+/* =========================================================
+   THEME 6: Emerald Luxury (Finance Pro)
+   ========================================================= */
+[data-theme='emerald'] {
+  --bg-app: #061c14;
+  --bg-surface: #0a261c;
+  --bg-surface-secondary: #0f382a;
+  --bg-surface-hover: #164e3b;
+  --bg-header: #0a261c;
+  
+  --border-subtle: #144634;
+  --border-strong: #1b5e46;
+  --border-grid: #133f30;
+  --header-grid-bg: #072017;
+  --header-grid-text: #34d399;
+  --header-grid-active: #144634;
+  
+  --text-primary: #ecfdf5;
+  --text-secondary: #a7f3d0;
+  --text-muted: #6ee7b7;
+  
+  --accent-primary: #10b981;
+  --accent-primary-hover: #059669;
+  --accent-primary-subtle: rgba(16, 185, 129, 0.2);
+  --accent-blue: #fbbf24;
+  --accent-blue-subtle: rgba(251, 191, 36, 0.15);
+  
+  --selection-border: #10b981;
+  --selection-bg: rgba(16, 185, 129, 0.15);
+  --fill-handle-color: #fbbf24;
+  
+  --ai-surface: #0a261c;
+}
+
+/* =========================================================
+   THEME 7: Cyberpunk Neon
+   ========================================================= */
+[data-theme='cyberpunk'] {
+  --bg-app: #050508;
+  --bg-surface: #0c0d14;
+  --bg-surface-secondary: #161826;
+  --bg-surface-hover: #23273e;
+  --bg-header: #0c0d14;
+  
+  --border-subtle: #24273d;
+  --border-strong: #3b3f63;
+  --border-grid: #1a1c2d;
+  --header-grid-bg: #090a0f;
+  --header-grid-text: #00f0ff;
+  --header-grid-active: #24273d;
+  
+  --text-primary: #f3f4f6;
+  --text-secondary: #00f0ff;
+  --text-muted: #7982a9;
+  
+  --accent-primary: #ff0055;
+  --accent-primary-hover: #e6004c;
+  --accent-primary-subtle: rgba(255, 0, 85, 0.2);
+  --accent-blue: #00f0ff;
+  --accent-blue-subtle: rgba(0, 240, 255, 0.15);
+  
+  --selection-border: #ff0055;
+  --selection-bg: rgba(255, 0, 85, 0.15);
+  --fill-handle-color: #00f0ff;
+  
+  --ai-surface: #0c0d14;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+body, html, #root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: var(--font-sans);
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+  user-select: none;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-surface-secondary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* Base utility buttons */
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-icon:hover {
+  background: var(--bg-surface-hover);
+  color: var(--text-primary);
+}
+
+.btn-icon.active {
+  background: var(--accent-blue-subtle);
+  color: var(--accent-blue);
+  border-color: rgba(37, 99, 235, 0.2);
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  background: var(--accent-primary);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.btn-primary:hover {
+  background: var(--accent-primary-hover);
+}
+
+.btn-ai-spark {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #2563eb, #7c3aed, #db2777);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(124, 58, 237, 0.25);
+  transition: all 0.2s ease;
+}
+
+.btn-ai-spark:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
+}
+
+.btn-ai-spark:active {
+  transform: translateY(0);
+}
+
+/* Modals backdrop */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  box-shadow: var(--shadow-xl);
+  max-width: 90vw;
+  max-height: 85vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
